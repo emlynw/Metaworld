@@ -511,6 +511,7 @@ class SawyerXYZEnv(SawyerMocapBase, EzPickle):
             dtype=np.float64,
         )
         reward, info = self.evaluate_state(self._last_stable_obs, action)
+        self._set_pos_site("goal", self._target_pos)
         # step will never return a terminate==True if there is a success
         # but we can return truncate=True if the current path length == max path length
         truncate = False
