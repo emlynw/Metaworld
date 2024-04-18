@@ -33,7 +33,7 @@ To install everything, run:
 
 
 ```
-pip install git+https://github.com/Farama-Foundation/Metaworld.git@master#egg=metaworld
+pip install git+https://github.com/emlynw/Metaworld.git@master#egg=metaworld
 ```
 
 Alternatively, you can clone the repository and install an editable version locally:
